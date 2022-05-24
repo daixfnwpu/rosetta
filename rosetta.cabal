@@ -1,0 +1,34 @@
+Name:                rosetta
+Version:             1.1.2
+License:             GPL
+License-file:        LICENSE
+Synopsis:            A 3-D First Person Shooter Game
+Description:         A fast and basic reimplementation of the Quake III Arena engine
+                     in Haskell; supports many Quake III Arena maps.
+Category:            Game
+Author:              Mun Hon Cheong
+Maintainer:          dons@galois.com
+Homepage:            http://haskell.org/haskellwiki/rosetta
+Build-Type:          Simple
+Cabal-Version:       >= 1.2
+Tested-with:         GHC==8.6.5
+data-files:
+     README.md
+
+Executable rosetta
+   Main-is:        Main.hs
+   Build-Depends:  base==4.*
+                 , array
+                 , deepseq
+                 , hashtables
+                 , random
+   Hs-source-dirs: src
+   Ghc-options:    -O2 -funbox-strict-fields -optc-O2
+   Extensions:     BangPatterns
+                 , FunctionalDependencies
+                 , FlexibleInstances
+                 , MultiParamTypeClasses
+                 , TypeOperators
+                 , Rank2Types
+   other-modules:  ThroundDoors
+                 
