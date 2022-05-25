@@ -25,3 +25,17 @@
 .stack-work/install/x86_64-linux-tinfo6/f5d3715805724a43cce05b131b4a161631db13dd9c7296fe49b8533b82663eef/8.10.7/pkgdb/package.cache
 .stack-work/install/x86_64-linux-tinfo6/f5d3715805724a43cce05b131b4a161631db13dd9c7296fe49b8533b82663eef/8.10.7/pkgdb/package.cache.lock
 .stack-work/install/x86_64-linux-tinfo6/f5d3715805724a43cce05b131b4a161631db13dd9c7296fe49b8533b82663eef/8.10.7/share/x86_64-linux-ghc-8.10.7/rosetta-1.1.2/README.md
+.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/rosetta/rosetta-tmp/ThroundPrisoners.hi
+.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/rosetta/rosetta-tmp/ThroundPrisoners.o
+.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/stack-build-caches/8a1b5e32f7197c094b2dc3e8a0e0080320d0666674340d8b2481ce6fee069a77/exe-rosetta
+.stack-work/ghci/86aeec78/cabal_macros.h
+.stack-work/install/x86_64-linux-tinfo6/78fc7f9aa75b5b0697f15e6d8f2e81262aab3ea73130be0bd48a18e632dbb028/8.10.7/pkgdb/package.cache
+.stack-work/install/x86_64-linux-tinfo6/78fc7f9aa75b5b0697f15e6d8f2e81262aab3ea73130be0bd48a18e632dbb028/8.10.7/pkgdb/package.cache.lock
+.stack-work/install/x86_64-linux-tinfo6/8a1b5e32f7197c094b2dc3e8a0e0080320d0666674340d8b2481ce6fee069a77/8.10.7/bin/rosetta
+.stack-work/install/x86_64-linux-tinfo6/8a1b5e32f7197c094b2dc3e8a0e0080320d0666674340d8b2481ce6fee069a77/8.10.7/doc/rosetta-1.1.2/LICENSE
+.stack-work/install/x86_64-linux-tinfo6/8a1b5e32f7197c094b2dc3e8a0e0080320d0666674340d8b2481ce6fee069a77/8.10.7/installed-packages/rosetta-1.1.2
+.stack-work/install/x86_64-linux-tinfo6/8a1b5e32f7197c094b2dc3e8a0e0080320d0666674340d8b2481ce6fee069a77/8.10.7/pkgdb/package.cache
+.stack-work/install/x86_64-linux-tinfo6/8a1b5e32f7197c094b2dc3e8a0e0080320d0666674340d8b2481ce6fee069a77/8.10.7/pkgdb/package.cache.lock
+.stack-work/install/x86_64-linux-tinfo6/8a1b5e32f7197c094b2dc3e8a0e0080320d0666674340d8b2481ce6fee069a77/8.10.7/share/x86_64-linux-ghc-8.10.7/rosetta-1.1.2/README.md
+stack.yaml.lock
+stack.yaml.lock

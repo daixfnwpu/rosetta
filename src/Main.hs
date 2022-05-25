@@ -1,5 +1,5 @@
 module Main where
 
 import ThroundDoors (runMain)
-
-main = runMain
+import qualified  ThroundPrisoners (runMain) 
+main = ThroundPrisoners.runMain

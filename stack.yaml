@@ -40,7 +40,6 @@ packages:
 #   commit: e7b331f14bcffb8367cd58fbfc8b40ec7642100a
 #
 extra-deps:
-- Yampa-0.13.1@sha256:4612a2646c27bcd3ac55c90dbc34249303e28aa5b3bc3e0c6fa9ce58b889843c,5436
 
 # Override default flag values for local packages and extra-deps
 flags: {}

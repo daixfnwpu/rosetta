@@ -19,6 +19,7 @@ Executable rosetta
    Main-is:        Main.hs
    Build-Depends:  base==4.*
                  , array
+                 , mtl
                  , deepseq
                  , hashtables
                  , random
@@ -31,4 +32,5 @@ Executable rosetta
                  , TypeOperators
                  , Rank2Types
    other-modules:  ThroundDoors
+                 , ThroundPrisoners
                  
