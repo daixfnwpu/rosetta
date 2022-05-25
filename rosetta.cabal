@@ -33,4 +33,5 @@ Executable rosetta
                  , Rank2Types
    other-modules:  ThroundDoors
                  , ThroundPrisoners
+                 , FifthPuzzleGame
                  
