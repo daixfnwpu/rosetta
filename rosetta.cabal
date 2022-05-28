@@ -23,6 +23,9 @@ Executable rosetta
                  , deepseq
                  , hashtables
                  , random
+                 , random-fu
+                 , lens
+                 , ansi-terminal
    Hs-source-dirs: src
    Ghc-options:    -O2 -funbox-strict-fields -optc-O2
    Extensions:     BangPatterns
@@ -34,4 +37,5 @@ Executable rosetta
    other-modules:  ThroundDoors
                  , ThroundPrisoners
                  , FifthPuzzleGame
+                 , TwoZeroFourEightGame
                  

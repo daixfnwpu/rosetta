@@ -1,3 +1,4 @@
+{-# LANGUAGE ScopedTypeVariables #-}
 module  FifthPuzzleGame where
 
 import Data.Array
@@ -8,7 +9,7 @@ runMain :: IO()
 runMain = do
     putStrLn "Please enter the difficulty level:0,1 or 2"
     userInput <-getLine
-    let diffLevel = read userInput
+    let diffLevel = read userInput :: Int
     if userInput == "" || any (\c -> c <'0' || c > '9') userInput || diffLevel > 2 || diffLevel < 0
         then putStrLn "That is not a valid difficulty level." >> runMain
         else shufflePuzzle ([10,50,100] !! diffLevel) solvedPuzzle >>= gameLoop
@@ -30,7 +31,7 @@ validMoves :: Puzzle -> [Int]
 validMoves puzzle = [puzzle ! (row', column') |
    row' <- [rowEmpty - 1 .. rowEmpty + 1],
    row' < 4,
-   row' > 0,
+   row' >= 0,
    column' <- [columnEmpty - 1 .. columnEmpty + 1],
    column' < 4,
    column' >= 0,
