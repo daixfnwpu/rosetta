@@ -9,7 +9,7 @@ import System.Console.ANSI
 import GHC.IO.Handle (hSetEcho, hSetBuffering)
 import Control.Monad (replicateM, replicateM_, when)
 import System.IO
-colors =
+numColors =
  [(0,"\ESC[38;5;234;48;5;250m     ")
  ,(2,"\ESC[38;5;234;48;5;255m  2  ")
  ,(4,"\ESC[38;5;234;48;5;230m  4  ")
@@ -39,7 +39,6 @@ combile,shift :: [Int] -> [Int]
 combile(x:y:l) | x==y = (2*x) : combile l
 combile(x:l) = x : combile l
 combile [] = []
-
 shift l = take  (length l) $ combile $ filter (>0) l ++  [0,0..]
 
 reflect :: [[a]] -> [[a]]
@@ -82,12 +81,13 @@ play pos = do
             draw pos2
             when (win pos2 && not (win pos)) $ putStrLn "you win! you may keep goning."
             if lost pos2 then putStrLn "You lost!"
-                else play pos2
+                         else play pos2
 runMain = do
     pos <- sample $ add2or4 $ replicate 4 (replicate 4 0)
     draw pos
     play pos
-showTile x = fromJust (lookup x colors) ++ "\ESC[B\^H\^H\^H\^H\^H     \ESC[A\ESC[C"
+showTile x = fromJust (lookup x numColors) ++ "\ESC[B\^H\^H\^H\^H\^H     \ESC[A\ESC[C"
+--showTile x = fromJust (lookup x numColors) -- ++ "\ESC[B\^H\^H\^H\^H\^H     \ESC[A\ESC[C"
 
 draw pos = do
     setSGR [Reset]

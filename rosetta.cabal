@@ -2,16 +2,14 @@ Name:                rosetta
 Version:             1.1.2
 License:             GPL
 License-file:        LICENSE
-Synopsis:            A 3-D First Person Shooter Game
-Description:         A fast and basic reimplementation of the Quake III Arena engine
-                     in Haskell; supports many Quake III Arena maps.
+Synopsis:            List of the rosetta code
+Description:         List of all the haskell language of the rosetta
 Category:            Game
-Author:              Mun Hon Cheong
-Maintainer:          dons@galois.com
+Author:              daixfnwpu 
+Maintainer:          daixfnwpu@gmail.com
 Homepage:            http://haskell.org/haskellwiki/rosetta
 Build-Type:          Simple
 Cabal-Version:       >= 1.2
-Tested-with:         GHC==8.6.5
 data-files:
      README.md
 
