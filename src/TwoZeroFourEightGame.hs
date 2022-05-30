@@ -65,8 +65,9 @@ indicesOf :: [a] -> [ReifiedTraversal' [a] a]
 indicesOf l = [Traversal $ ix i | i<-[0..length  l -1]]
 
 indices20f :: [[a]] -> [ReifiedTraversal' [[a]] a]
-indices20f ls = [Traversal $i .j | Traversal i<- indicesOf ls, let Just l = ls ^?i,Traversal j <- indicesOf l]
+indices20f ls = [Traversal $ i .j | Traversal i<- indicesOf ls, let Just l = ls ^?i,Traversal j <- indicesOf l]
 
+add2or4:: Position -> RVar Position
 add2or4 pos = do
     xy <- randomElement [xy | Traversal xy <- indices20f pos,pos ^? xy == Just 0]
     a  <- categorical [(1-prob4,2),(prob4,4)]

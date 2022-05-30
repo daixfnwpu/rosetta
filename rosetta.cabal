@@ -24,6 +24,7 @@ Executable rosetta
                  , random-fu
                  , lens
                  , ansi-terminal
+               --  , diagrams==1.4.0.1
    Hs-source-dirs: src
    Ghc-options:    -O2 -funbox-strict-fields -optc-O2
    Extensions:     BangPatterns
@@ -36,4 +37,6 @@ Executable rosetta
                  , ThroundPrisoners
                  , FifthPuzzleGame
                  , TwoZeroFourEightGame
+                 , TwentityGame
+                 , TwentityFour
                  
