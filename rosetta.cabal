@@ -39,4 +39,5 @@ Executable rosetta
                  , TwoZeroFourEightGame
                  , TwentityGame
                  , TwentityFour
+                 , TwentitySolveGame
                  
