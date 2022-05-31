@@ -7,8 +7,10 @@ import TwoZeroFourEightGame
 import TwentityGame
 import TwentityFour
 import TwentitySolveGame
+import FourRingsSquaresPuzzle
 --main = FifthPuzzleGame.runMain
 --main = TwoZeroFourEightGame.runMain
 --main = TwentityGame.runMain
 --main = TwentityFour.runMain
-main = TwentitySolveGame.runMain
+--main = TwentitySolveGame.runMain
+main = FourRingsSquaresPuzzle.runMain

@@ -40,4 +40,5 @@ Executable rosetta
                  , TwentityGame
                  , TwentityFour
                  , TwentitySolveGame
+                 , FourRingsSquaresPuzzle
                  

@@ -27,10 +27,10 @@ templates  = do
     op2 <- ops
     op3 <- ops
     [\[a,b,c,d] -> op1 a $ op2 b $ op3 c d,
-     \[a,b,c,d] -> op1  (op2 a b ) $ op3 c d,
+     \[a,b,c,d] -> op1 (op2 a b) $ op3 c d,
      \[a,b,c,d] -> op1 a $ op2 (op3 b c) d,
-     \[a,b,c,d] -> op1 (op2 a  $ op3 b c) d,
-     \[a,b,c,d] -> op1 ( op2 (op3 a b ) c) d]
+     \[a,b,c,d] -> op1 (op2 a $ op3 b c) d,
+     \[a,b,c,d] -> op1 (op2 (op3 a b) c) d]
 
 eval :: Expr -> Maybe  Rational
 eval (Constant c) = Just c
@@ -46,6 +46,6 @@ solve :: Rational -> [Rational] -> [Expr]
 solve target r4 = filter ((Just target ==) . eval) $
     liftM2 ($) templates $
     nub $ permutations $ map Constant r4
-runMain = getArgs >>= mapM_  print . solve 24 . map (toEnum .read)
+runMain = getArgs >>= mapM_  print . solve 24 . map (toEnum . read)
 
 
