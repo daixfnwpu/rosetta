@@ -25,6 +25,7 @@ Executable rosetta
                  , lens
                  , ansi-terminal
                  , template-haskell
+                 , containers
                --  , diagrams==1.4.0.1
    Hs-source-dirs: src
    Ghc-options:    -O2 -funbox-strict-fields -optc-O2
@@ -44,4 +45,5 @@ Executable rosetta
                  , FourRingsSquaresPuzzle
                  , NineBillonNamesGod
                  , NineNineBottleOfBeer
+                 , ASearchAlgorithm
                  
