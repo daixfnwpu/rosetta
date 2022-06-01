@@ -24,6 +24,7 @@ Executable rosetta
                  , random-fu
                  , lens
                  , ansi-terminal
+                 , template-haskell
                --  , diagrams==1.4.0.1
    Hs-source-dirs: src
    Ghc-options:    -O2 -funbox-strict-fields -optc-O2
@@ -41,4 +42,6 @@ Executable rosetta
                  , TwentityFour
                  , TwentitySolveGame
                  , FourRingsSquaresPuzzle
+                 , NineBillonNamesGod
+                 , NineNineBottleOfBeer
                  
