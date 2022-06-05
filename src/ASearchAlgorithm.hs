@@ -6,13 +6,17 @@ import qualified Data.Map as Map
 import Data.List (unfoldr)
 data PQueue a = EmptyQueue | Node (Int,a) (PQueue a) (PQueue a)
     deriving (Show,Foldable)
+-- deriving clause . It specifies that we want the compiler to automatically generate instances of the Show and Foldable classes for our PQueue type.
+
 newtype Graph n = Graph {links :: n-> Map n Int}
-instance Ord  a => Semigroup (PQueue a) where
+-- new type is used to one parameter and only one parameters Type.
+instance  Semigroup (PQueue a) where
     h1@(Node (w1,x1) l1 r1) <> h2@(Node (w2,x2) l2 r2)
         | w1 < w2 = Node (w1,x1) (h2 <> r1) l1
         | otherwise = Node (w2,x2) (h1 <> r2) l2
     EmptyQueue <> h = h
     h <> EmptyQueue = h
+-- instace this PQueue, if we do'nt imstance this class ,we can not use the <> associative.
 entry :: Ord a => a -> Int -> PQueue a
 entry x w = Node (w,x) EmptyQueue EmptyQueue
 
@@ -43,6 +47,7 @@ set m k x = Map.insert k x m
 data AstarData n = SetData { cameFrom :: Map n n
                             ,gScore   :: Map n Int
                             ,openSet  :: PQueue n}
+
 findPath :: (Ord n, Bounded n) => Graph n -> (n -> n -> Int) -> n -> n -> [n]
 findPath (Graph links) metric start goal = loop a0
     where
@@ -50,7 +55,7 @@ findPath (Graph links) metric start goal = loop a0
                          cameFrom = mempty
                         ,gScore   = Map.singleton start 0
                         ,openSet  = entry start (h start)
-                        }
+                    }
         h  = metric goal
         dist = get . links
         loop a = case deque (openSet a) of

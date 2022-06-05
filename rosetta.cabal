@@ -11,7 +11,8 @@ Homepage:            http://haskell.org/haskellwiki/rosetta
 Build-Type:          Simple
 Cabal-Version:       >= 1.2
 data-files:
-     README.md
+      README.md
+     ,data/weekDayNames.txt
 
 Executable rosetta
    Main-is:        Main.hs
@@ -46,4 +47,5 @@ Executable rosetta
                  , NineBillonNamesGod
                  , NineNineBottleOfBeer
                  , ASearchAlgorithm
+                 , Abbreviation
                  

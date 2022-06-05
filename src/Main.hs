@@ -11,6 +11,7 @@ import FourRingsSquaresPuzzle
 import NineBillonNamesGod
 import NineNineBottleOfBeer
 import ASearchAlgorithm
+import Abbreviation
 --main = FifthPuzzleGame.runMain
 --main = TwoZeroFourEightGame.runMain
 --main = TwentityGame.runMain
@@ -19,4 +20,5 @@ import ASearchAlgorithm
 --main = FourRingsSquaresPuzzle.runMain
 --main = NineBillonNamesGod.runMain
 --main = NineNineBottleOfBeer.runBrevity >> NineNineBottleOfBeer.runList >> NineNineBottleOfBeer.runTH
-main = ASearchAlgorithm.runMain
+--main = ASearchAlgorithm.runMain
+main = Abbreviation.runMain
