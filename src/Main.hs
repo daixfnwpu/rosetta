@@ -12,6 +12,8 @@ import NineBillonNamesGod
 import NineNineBottleOfBeer
 import ASearchAlgorithm
 import Abbreviation
+import AbbreviationEasy
+import AbbreviationSimple
 --main = FifthPuzzleGame.runMain
 --main = TwoZeroFourEightGame.runMain
 --main = TwentityGame.runMain
@@ -21,4 +23,5 @@ import Abbreviation
 --main = NineBillonNamesGod.runMain
 --main = NineNineBottleOfBeer.runBrevity >> NineNineBottleOfBeer.runList >> NineNineBottleOfBeer.runTH
 --main = ASearchAlgorithm.runMain
-main = Abbreviation.runMain
+--main = AbbreviationEasy.runMain
+main = AbbreviationSimple.runMain

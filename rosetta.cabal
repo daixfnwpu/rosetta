@@ -48,4 +48,6 @@ Executable rosetta
                  , NineNineBottleOfBeer
                  , ASearchAlgorithm
                  , Abbreviation
+                 , AbbreviationEasy
+                 , AbbreviationSimple
                  
