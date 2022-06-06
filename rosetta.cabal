@@ -51,4 +51,5 @@ Executable rosetta
                  , AbbreviationEasy
                  , AbbreviationSimple
                  , ABCProblem
+                 , ABCWords
                  
