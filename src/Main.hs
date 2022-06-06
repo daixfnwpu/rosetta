@@ -14,6 +14,7 @@ import ASearchAlgorithm
 import Abbreviation
 import AbbreviationEasy
 import AbbreviationSimple
+import ABCProblem
 --main = FifthPuzzleGame.runMain
 --main = TwoZeroFourEightGame.runMain
 --main = TwentityGame.runMain
@@ -24,4 +25,5 @@ import AbbreviationSimple
 --main = NineNineBottleOfBeer.runBrevity >> NineNineBottleOfBeer.runList >> NineNineBottleOfBeer.runTH
 --main = ASearchAlgorithm.runMain
 --main = AbbreviationEasy.runMain
-main = AbbreviationSimple.runMain
+--main = AbbreviationSimple.runMain
+main = ABCProblem.runMain

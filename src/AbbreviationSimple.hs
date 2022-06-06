@@ -7,7 +7,7 @@ import Data.Maybe (maybe)
 withExpansions ::  [(String, Int)] -> String -> String
 withExpansions tbl s = unwords $ expanded tbl <$> words s 
 
-table :: [([Char], Int)]
+table :: [(String, Int)]
 table = 
   cmdsFromString
     "add 1  alter 3  backup 2  bottom 1  Cappend 2  change 1 \
@@ -31,7 +31,7 @@ expanded tbl k = maybe "*error*"  fst (expand k)
                 lng = length s
             in find (\(w,n) -> lng >= n && isPrefixOf u w) tbl
 
-cmdsFromString :: String -> [([Char], Int)]
+cmdsFromString :: String -> [(String, Int)]
 cmdsFromString s = 
     let go w@(x:_) (xs,n)
             | isDigit x = (xs,read w :: Int)
