@@ -52,4 +52,5 @@ Executable rosetta
                  , AbbreviationSimple
                  , ABCProblem
                  , ABCWords
+                 , Abelian
                  
