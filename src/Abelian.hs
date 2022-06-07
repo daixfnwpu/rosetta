@@ -89,20 +89,20 @@ changeArr p f = do
     liftST $ writeArray a  p newC
     return newC
 initArray size height = array 
-    ((-size,-size),(size,size)) [((x,y),if x== 0 && y==0 then height else 0) | x<-[-size.. size],y <-[size .. size]]
-
+      ((-size,-size), (size,size)) 
+      [((x,y), if x==0 && y==0 then height else 0) | x<-[-size .. size], y<-[-size .. size]]
 toPGM :: ArrayU -> FilePath -> IO ()
 toPGM a fp = withFile fp WriteMode $ \h -> do
     let ((x1,y1),(x2,y2)) = bounds a
         width = x2 - x1 +1
-        height = y2 -y2 +1
+        height = y2 -y1 +1
     hPutStrLn h "p2"
     hPutStrLn h $ show width ++ " " ++ show height
     hPutStrLn h "3"
     forM_ [y1..y2]  $ \y -> do
         forM_ [x1..x2] $ \x -> do
             let c = min 3 $ a ! (x,y)
-            hPutStrLn h $ show c ++ " "
+            hPutStr h $ show c ++ " "
         hPutStrLn h ""
 
 runMain size height = do

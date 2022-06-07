@@ -30,4 +30,4 @@ import Abelian
 --main = AbbreviationSimple.runMain
 --main = ABCProblem.runMain
 --main = ABCWords.runMain
-main = Abelian.runMain  8 8 
+main = Abelian.runMain  8 100 
