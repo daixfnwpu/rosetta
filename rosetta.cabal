@@ -54,4 +54,5 @@ Executable rosetta
                  , ABCWords
                  , Abelian
                  , Abundant
+                 , Accumulator
                  
