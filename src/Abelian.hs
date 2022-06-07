@@ -42,7 +42,7 @@ simulateST a = do
     let st = S {
         bMin = p1
        ,bMax = p2
-       ,arr =b
+       ,arr  =b
     }
     runM simulateM st s
 
@@ -88,6 +88,7 @@ changeArr p f = do
     let newC = f oldC
     liftST $ writeArray a  p newC
     return newC
+initArray :: Int -> Word32 -> ArrayU
 initArray size height = array 
       ((-size,-size), (size,size)) 
       [((x,y), if x==0 && y==0 then height else 0) | x<-[-size .. size], y<-[-size .. size]]

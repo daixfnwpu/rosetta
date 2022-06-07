@@ -53,4 +53,5 @@ Executable rosetta
                  , ABCProblem
                  , ABCWords
                  , Abelian
+                 , Abundant
                  
