@@ -16,6 +16,7 @@ import AbbreviationEasy
 import AbbreviationSimple
 import ABCProblem
 import ABCWords
+import Abelian
 --main = FifthPuzzleGame.runMain
 --main = TwoZeroFourEightGame.runMain
 --main = TwentityGame.runMain
@@ -28,4 +29,5 @@ import ABCWords
 --main = AbbreviationEasy.runMain
 --main = AbbreviationSimple.runMain
 --main = ABCProblem.runMain
-main = ABCWords.runMain
+--main = ABCWords.runMain
+main = Abelian.runMain  8 8 
