@@ -16,7 +16,7 @@ data-files:
 
 Executable rosetta
    Main-is:        Main.hs
-   Build-Depends:  base==4.14.3.*
+   Build-Depends:  base
                  , array
                  , mtl
                  , deepseq
