@@ -19,6 +19,7 @@ import ABCWords
 import Abelian
 import Abundant
 import Accumulator
+import Ackermann
 --main = FifthPuzzleGame.runMain
 --main = TwoZeroFourEightGame.runMain
 --main = TwentityGame.runMain
@@ -33,4 +34,5 @@ import Accumulator
 --main = ABCProblem.runMain
 --main = ABCWords.runMain
 --main = Abundant.runMain
-main = Accumulator.runMain
+--main = Accumulator.runMain
+main = Ackermann.runMain

@@ -16,7 +16,7 @@ data-files:
 
 Executable rosetta
    Main-is:        Main.hs
-   Build-Depends:  base==4.*
+   Build-Depends:  base==4.14.3.*
                  , array
                  , mtl
                  , deepseq
@@ -27,6 +27,7 @@ Executable rosetta
                  , ansi-terminal
                  , template-haskell
                  , containers
+                 , time
                --  , diagrams==1.4.0.1
    Hs-source-dirs: src
    Ghc-options:    -O2 -funbox-strict-fields -optc-O2
@@ -55,4 +56,6 @@ Executable rosetta
                  , Abelian
                  , Abundant
                  , Accumulator
+                 , Ackermann
+                 , ActiveObject
                  
