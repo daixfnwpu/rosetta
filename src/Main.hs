@@ -21,6 +21,8 @@ import Abundant
 import Accumulator
 import Ackermann
 import ActiveObject
+import AdditionChains
+import AdditivePrimes
 --main = FifthPuzzleGame.runMain
 --main = TwoZeroFourEightGame.runMain
 --main = TwentityGame.runMain
@@ -36,4 +38,5 @@ import ActiveObject
 --main = ABCWords.runMain
 --main = Abundant.runMain
 --main = Accumulator.runMain
-main = ActiveObject.runMain
+--main = ActiveObject.runMain
+main = AdditivePrimes.runMain

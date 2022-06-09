@@ -58,4 +58,7 @@ Executable rosetta
                  , Accumulator
                  , Ackermann
                  , ActiveObject
+                 , AdditionChains
+                 , AdditionChainsExponentiation
+                 , AdditivePrimes
                  
