@@ -1,7 +1,13 @@
 module TwoZeroFourEightGame where
 import Data.List
-import Data.Random
+import Data.Random ( randomElement,sample, RVar, runRVarT, Normal (StdNormal), Sampleable (sampleFrom) )
 import Control.Lens
+    ( (&),
+      (^?),
+      (.~),
+      Ixed(ix),
+      ReifiedTraversal(Traversal),
+      ReifiedTraversal' )
 import Data.Random.Distribution.Categorical
 import Foreign (pooledNewArray0)
 import Data.Maybe
@@ -9,6 +15,8 @@ import System.Console.ANSI
 import GHC.IO.Handle (hSetEcho, hSetBuffering)
 import Control.Monad (replicateM, replicateM_, when)
 import System.IO
+import Control.Monad.Reader (ReaderT(runReaderT), MonadIO (liftIO))
+import System.Random.Stateful (globalStdGen)
 numColors =
  [(0,"\ESC[38;5;234;48;5;250m     ")
  ,(2,"\ESC[38;5;234;48;5;255m  2  ")
@@ -73,18 +81,19 @@ add2or4 pos = do
     a  <- categorical [(1-prob4,2),(prob4,4)]
     return $ pos & xy .~ a
 
+play :: Position -> IO ()
 play pos = do
     c <-getChar
     case go pos $ lookup c [('D', left),('C',right),('A',up),('B',down)] of
         Nothing -> play pos
         Just pos1 -> do
-            pos2 <- sample $ add2or4 pos1
+            pos2 <-  sampleFrom globalStdGen $ add2or4 pos1  
             draw pos2
             when (win pos2 && not (win pos)) $ putStrLn "you win! you may keep goning."
             if lost pos2 then putStrLn "You lost!"
                          else play pos2
 runMain = do
-    pos <- sample $ add2or4 $ replicate 4 (replicate 4 0)
+    pos <- sampleFrom  globalStdGen  $ add2or4 $ replicate 4 (replicate 4 0)
     draw pos
     play pos
 showTile x = fromJust (lookup x numColors) ++ "\ESC[B\^H\^H\^H\^H\^H     \ESC[A\ESC[C"
