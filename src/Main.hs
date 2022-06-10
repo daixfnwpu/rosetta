@@ -23,6 +23,7 @@ import Ackermann
 import ActiveObject
 import AdditionChains
 import AdditivePrimes
+import ASKPrimes;
 --main = FifthPuzzleGame.runMain
 --main = TwoZeroFourEightGame.runMain
 --main = TwentityGame.runMain
@@ -39,4 +40,5 @@ import AdditivePrimes
 --main = Abundant.runMain
 --main = Accumulator.runMain
 --main = ActiveObject.runMain
-main = AdditivePrimes.runMain
+--main = AdditivePrimes.runMain
+main = ASKPrimes.runMain

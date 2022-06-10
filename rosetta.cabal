@@ -61,4 +61,6 @@ Executable rosetta
                  , AdditionChains
                  , AdditionChainsExponentiation
                  , AdditivePrimes
+                 , ASKPrimes
+                 , AlgebraicData
                  
