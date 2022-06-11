@@ -25,6 +25,7 @@ import AdditionChains
 import AdditivePrimes
 import ASKPrimes;
 import AlignColumns
+import AliquotSeq
 --main = FifthPuzzleGame.runMain
 --main = TwoZeroFourEightGame.runMain
 --main = TwentityGame.runMain
@@ -43,4 +44,5 @@ import AlignColumns
 --main = ActiveObject.runMain
 --main = AdditivePrimes.runMain
 --main = ASKPrimes.runMain
-main = AlignColumns.runMain
+--main = AlignColumns.runMain
+main = AliquotSeq.runMain

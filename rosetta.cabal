@@ -64,4 +64,5 @@ Executable rosetta
                  , ASKPrimes
                  , AlgebraicData
                  , AlignColumns
+                 , AliquotSeq
                  
