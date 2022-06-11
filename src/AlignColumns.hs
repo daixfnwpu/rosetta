@@ -1,3 +1,4 @@
+{-# OPTIONS_GHC -Wno-incomplete-patterns #-}
 module AlignColumns where
 import Data.List(unfoldr,transpose)
 import Control.Arrow(second)
@@ -13,6 +14,7 @@ dat ="Given$a$text$file$of$many$lines,$where$fields$within$a$line$\n" ++
 brkdwn :: String -> [String]
 brkdwn = takeWhile (not . null) . unfoldr (Just . second (drop 1) . span ('$' /=))
 -- span == splite a list use the '$'.
+format :: Char -> String -> [String]
 format j ls = map (unwords . zipWith align colw) rows
     where
         rows = map brkdwn $ lines  ls
@@ -22,3 +24,9 @@ format j ls = map (unwords . zipWith align colw) rows
                 'c' -> replicate l ' ' ++ w ++ replicate r ' '
                 'r' -> replicate dl ' '  ++ w
                 'l' -> w ++ replicate dl  ' ' 
+            where
+                dl = cw - length w
+                (l,r)= (dl `div` 2,dl-1)
+runMain :: IO ()
+runMain = do
+    mapM_ putStrLn $ format 'l' dat
