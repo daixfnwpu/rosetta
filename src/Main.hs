@@ -26,6 +26,8 @@ import AdditivePrimes
 import ASKPrimes;
 import AlignColumns
 import AliquotSeq
+import AlmkvistGiullera
+import AlmostPrimes
 --main = FifthPuzzleGame.runMain
 --main = TwoZeroFourEightGame.runMain
 --main = TwentityGame.runMain
@@ -45,4 +47,6 @@ import AliquotSeq
 --main = AdditivePrimes.runMain
 --main = ASKPrimes.runMain
 --main = AlignColumns.runMain
-main = AliquotSeq.runMain
+--main = AliquotSeq.runMain
+--main = AlmkvistGiullera.runMain
+main = AlmostPrimes.runMain

@@ -28,6 +28,7 @@ Executable rosetta
                  , template-haskell
                  , containers
                  , time
+                 , numbers
                --  , diagrams==1.4.0.1
    Hs-source-dirs: src
    Ghc-options:    -O2 -funbox-strict-fields -optc-O2
@@ -65,4 +66,6 @@ Executable rosetta
                  , AlgebraicData
                  , AlignColumns
                  , AliquotSeq
+                 , AlmkvistGiullera
+                 , AlmostPrimes
                  
