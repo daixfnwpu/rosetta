@@ -63,4 +63,5 @@ Executable rosetta
                  , AdditivePrimes
                  , ASKPrimes
                  , AlgebraicData
+                 , AlignColumns
                  
