@@ -10,11 +10,10 @@ primes = filter isPrime [2..]
 isKPrime :: (Eq t, Num t) => t -> Integer -> Bool
 isKPrime 1 n = isPrime n
 isKPrime k n = any (isKPrime (k-1)) sprimes
-    where
-        sprimes = map fst $ filter ((0 ==).snd)  $ map (divMod n ) $ takeWhile (<n) primes
+    where sprimes = map fst $ filter ((== 0) . snd) $ map (divMod n) $ takeWhile (< n) primes
 
 kPrimes :: (Eq t, Num t) => t -> [Integer]
-kPrimes k = filter (isKPrime k ) [2..]
+kPrimes k = filter (isKPrime k) [2..]
 
 runMain :: IO()
 runMain = Control.Monad.forM_  [1..5] $ \k ->

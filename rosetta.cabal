@@ -68,4 +68,6 @@ Executable rosetta
                  , AliquotSeq
                  , AlmkvistGiullera
                  , AlmostPrimes
+                 , AmicablePairs
+                 , Anagrams
                  

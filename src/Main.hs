@@ -28,6 +28,8 @@ import AlignColumns
 import AliquotSeq
 import AlmkvistGiullera
 import AlmostPrimes
+import AmicablePairs
+import Anagrams
 --main = FifthPuzzleGame.runMain
 --main = TwoZeroFourEightGame.runMain
 --main = TwentityGame.runMain
@@ -49,4 +51,6 @@ import AlmostPrimes
 --main = AlignColumns.runMain
 --main = AliquotSeq.runMain
 --main = AlmkvistGiullera.runMain
-main = AlmostPrimes.runMain
+--main = AlmostPrimes.runMain
+--main = AmicablePairs.runMain
+main = Anagrams.runMain
