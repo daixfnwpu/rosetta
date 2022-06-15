@@ -33,6 +33,7 @@ import Anagrams
 import DerangedAnagrams
 import AngleBetweenTwoBear
 import AnglesGeomoetric
+import AnimatePendulum
 --main = FifthPuzzleGame.runMain
 --main = TwoZeroFourEightGame.runMain
 --main = TwentityGame.runMain
@@ -59,4 +60,5 @@ import AnglesGeomoetric
 --main = Anagrams.runMain
 --main = DerangedAnagrams.runMain
 --main = AngleBetweenTwoBear.runMain
-main = AnglesGeomoetric.runMain
+--main = AnglesGeomoetric.runMain
+main = AnimatePendulum.runMain
