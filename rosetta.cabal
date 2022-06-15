@@ -70,4 +70,6 @@ Executable rosetta
                  , AlmostPrimes
                  , AmicablePairs
                  , Anagrams
+                 , DerangedAnagrams
+                 , AngleBetweenTwoBear
                  

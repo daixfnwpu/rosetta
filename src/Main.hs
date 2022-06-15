@@ -30,6 +30,8 @@ import AlmkvistGiullera
 import AlmostPrimes
 import AmicablePairs
 import Anagrams
+import DerangedAnagrams
+import AngleBetweenTwoBear
 --main = FifthPuzzleGame.runMain
 --main = TwoZeroFourEightGame.runMain
 --main = TwentityGame.runMain
@@ -53,4 +55,6 @@ import Anagrams
 --main = AlmkvistGiullera.runMain
 --main = AlmostPrimes.runMain
 --main = AmicablePairs.runMain
-main = Anagrams.runMain
+--main = Anagrams.runMain
+--main = DerangedAnagrams.runMain
+main = AngleBetweenTwoBear.runMain
