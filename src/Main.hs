@@ -32,6 +32,7 @@ import AmicablePairs
 import Anagrams
 import DerangedAnagrams
 import AngleBetweenTwoBear
+import AnglesGeomoetric
 --main = FifthPuzzleGame.runMain
 --main = TwoZeroFourEightGame.runMain
 --main = TwentityGame.runMain
@@ -57,4 +58,5 @@ import AngleBetweenTwoBear
 --main = AmicablePairs.runMain
 --main = Anagrams.runMain
 --main = DerangedAnagrams.runMain
-main = AngleBetweenTwoBear.runMain
+--main = AngleBetweenTwoBear.runMain
+main = AnglesGeomoetric.runMain
