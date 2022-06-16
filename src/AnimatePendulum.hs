@@ -41,7 +41,7 @@ newOrigin = (0,l_ /2)
 
 windowSize :: (Int, Int)
 windowSize = (300 + 2 * round (snd newOrigin)
-              ,200+ 2* round (snd newOrigin))
+              ,200 + 2 * round (snd newOrigin))
 
 runMain :: IO ()
 runMain = do

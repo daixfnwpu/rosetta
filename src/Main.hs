@@ -34,6 +34,7 @@ import DerangedAnagrams
 import AngleBetweenTwoBear
 import AnglesGeomoetric
 import AnimatePendulum
+import AntiPrimes
 --main = FifthPuzzleGame.runMain
 --main = TwoZeroFourEightGame.runMain
 --main = TwentityGame.runMain
@@ -61,4 +62,5 @@ import AnimatePendulum
 --main = DerangedAnagrams.runMain
 --main = AngleBetweenTwoBear.runMain
 --main = AnglesGeomoetric.runMain
-main = AnimatePendulum.runMain
+--main = AnimatePendulum.runMain
+main = AntiPrimes.runMain

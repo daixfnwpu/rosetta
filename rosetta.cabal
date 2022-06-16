@@ -75,4 +75,5 @@ Executable rosetta
                  , AngleBetweenTwoBear
                  , AnglesGeomoetric
                  , AnimatePendulum
+                 , AntiPrimes
                  
