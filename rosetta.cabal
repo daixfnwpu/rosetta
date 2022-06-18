@@ -76,4 +76,5 @@ Executable rosetta
                  , AnglesGeomoetric
                  , AnimatePendulum
                  , AntiPrimes
+                 , AVLTree
                  

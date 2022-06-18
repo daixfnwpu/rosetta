@@ -35,6 +35,7 @@ import AngleBetweenTwoBear
 import AnglesGeomoetric
 import AnimatePendulum
 import AntiPrimes
+import AVLTree
 --main = FifthPuzzleGame.runMain
 --main = TwoZeroFourEightGame.runMain
 --main = TwentityGame.runMain
@@ -63,4 +64,5 @@ import AntiPrimes
 --main = AngleBetweenTwoBear.runMain
 --main = AnglesGeomoetric.runMain
 --main = AnimatePendulum.runMain
-main = AntiPrimes.runMain
+--main = AntiPrimes.runMain
+main = AVLTree.runMain
