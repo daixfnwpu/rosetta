@@ -38,6 +38,7 @@ import AntiPrimes
 import AVLTree
 import ArchimedeanSpiral
 import ArithmeticEvaluation
+import AsciiDiagram
 --main = FifthPuzzleGame.runMain
 --main = TwoZeroFourEightGame.runMain
 --main = TwentityGame.runMain
@@ -69,4 +70,5 @@ import ArithmeticEvaluation
 --main = AntiPrimes.runMain
 --main = AVLTree.runMain
 --main = ArchimedeanSpiral.runMain
-main = ArithmeticEvaluation.runMain
+--main = ArithmeticEvaluation.runMain
+main = AsciiDiagram.runMain

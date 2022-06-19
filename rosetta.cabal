@@ -80,4 +80,5 @@ Executable rosetta
                  , AVLTree
                  , ArchimedeanSpiral
                  , ArithmeticEvaluation
+                 , AsciiDiagram
                  
