@@ -37,6 +37,7 @@ import AnimatePendulum
 import AntiPrimes
 import AVLTree
 import ArchimedeanSpiral
+import ArithmeticEvaluation
 --main = FifthPuzzleGame.runMain
 --main = TwoZeroFourEightGame.runMain
 --main = TwentityGame.runMain
@@ -67,4 +68,5 @@ import ArchimedeanSpiral
 --main = AnimatePendulum.runMain
 --main = AntiPrimes.runMain
 --main = AVLTree.runMain
-main = ArchimedeanSpiral.runMain
+--main = ArchimedeanSpiral.runMain
+main = ArithmeticEvaluation.runMain
