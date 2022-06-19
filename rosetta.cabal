@@ -77,4 +77,5 @@ Executable rosetta
                  , AnimatePendulum
                  , AntiPrimes
                  , AVLTree
+                 , ArchimedeanSpiral
                  

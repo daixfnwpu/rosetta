@@ -1,3 +1,4 @@
+{-# OPTIONS_GHC -Wno-incomplete-patterns #-}
 module AVLTree where
 data Tree a 
     = Leaf 
@@ -17,25 +18,44 @@ insert v t@(Node n left v_ right)
     | v_ > v = rotate $ Node n (insert v left) v_ right
     | otherwise = t
 
+max_ :: Ord a => Tree a -> Maybe a
+max_ Leaf = Nothing
+max_ (Node _ _ v right) =
+  case right of
+    Leaf -> Just v
+    _ -> max_ right
+ 
+delete :: Ord a => a -> Tree a -> Tree a
+delete _ Leaf = Leaf
+delete x (Node h left v right)
+  | x == v =
+    maybe left (rotate . (Node h left <*> (`delete` right))) (max_ right)
+  | x > v = rotate $ Node h left v (delete x right)
+  | x < v = rotate $ Node h (delete x left) v right
+
 rotate :: Tree a -> Tree a
+
 rotate Leaf = Leaf
-rotate (Node h nl@(Node lh ll lv lr) v nr@(Node rh rl rv rr)) 
-    | lh - rh > 1 && height ll - height lr > 0 = 
-        Node lh ll lv (Node (depth nr lr) lr v nr)
-    | rh - lh > 1 && height rr - height rl > 0 =
-        Node rh (Node (depth nl rl) nl v rl ) rv rr 
-
-rotate (Node h nl@(Node lh ll lv lr@(Node rlh rll rvl rrl)) v nr@(Node rh rl rv rr)) 
-    | lh - rh > 1 = 
-        Node  h (Node (rlh + 1) (Node (lh -1) ll lv rll) rvl rrl) v nr
-
+rotate (Node h (Node lh ll lv lr) v r) -- r may be Leaf ,so can not expand.
+  -- Left Left.
+  | lh - height r > 1 && height ll - height lr > 0 =
+    Node lh ll lv (Node (depth r lr) lr v r)
+rotate (Node h l v (Node rh rl rv rr))
+  -- Right Right.
+  | rh - height l > 1 && height rr - height rl > 0 =
+    Node rh (Node (depth l rl) l v rl) rv rr
+rotate (Node h (Node lh ll lv (Node rh rl rv rr)) v r)
+  -- Left Right.
+  | lh - height r > 1 =
+    Node h (Node (rh + 1) (Node (lh - 1) ll lv rl) rv rr) v r
 rotate (Node h l v (Node rh (Node lh ll lv lr) rv rr))
-    | rh - height l > 1 = 
-        Node h l v (Node (lh + 1) ll lv (Node (rh - 1) lr rv rr))
-
+  -- Right Left.
+  | rh - height l > 1 =
+    Node h l v (Node (lh + 1) ll lv (Node (rh - 1) lr rv rr))
 rotate (Node h l v r) =
-    let (l_ ,r_) = (rotate l, rotate r)
-    in Node (depth l_ r_) l_ v r_
+  -- Re-weighting.
+  let (l_, r_) = (rotate l, rotate r)
+   in Node (depth l_ r_) l_ v r_
 
 height :: Tree a -> Int
 height Leaf = -1

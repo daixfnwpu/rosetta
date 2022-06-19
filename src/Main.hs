@@ -36,6 +36,7 @@ import AnglesGeomoetric
 import AnimatePendulum
 import AntiPrimes
 import AVLTree
+import ArchimedeanSpiral
 --main = FifthPuzzleGame.runMain
 --main = TwoZeroFourEightGame.runMain
 --main = TwentityGame.runMain
@@ -65,4 +66,5 @@ import AVLTree
 --main = AnglesGeomoetric.runMain
 --main = AnimatePendulum.runMain
 --main = AntiPrimes.runMain
-main = AVLTree.runMain
+--main = AVLTree.runMain
+main = ArchimedeanSpiral.runMain
