@@ -39,6 +39,7 @@ import AVLTree
 import ArchimedeanSpiral
 import ArithmeticEvaluation
 import AsciiDiagram
+import AtomicUpdates
 --main = FifthPuzzleGame.runMain
 --main = TwoZeroFourEightGame.runMain
 --main = TwentityGame.runMain
@@ -71,4 +72,5 @@ import AsciiDiagram
 --main = AVLTree.runMain
 --main = ArchimedeanSpiral.runMain
 --main = ArithmeticEvaluation.runMain
-main = AsciiDiagram.runMain
+--main = AsciiDiagram.runMain
+main = AtomicUpdates.runMain

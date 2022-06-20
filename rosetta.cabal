@@ -41,44 +41,45 @@ Executable rosetta
                  , TypeOperators
                  , Rank2Types
    other-modules:  ThroundDoors
-                 , ThroundPrisoners
-                 , FifthPuzzleGame
-                 , TwoZeroFourEightGame
-                 , TwentityGame
-                 , TwentityFour
-                 , TwentitySolveGame
-                 , FourRingsSquaresPuzzle
-                 , NineBillonNamesGod
-                 , NineNineBottleOfBeer
-                 , ASearchAlgorithm
-                 , Abbreviation
-                 , AbbreviationEasy
-                 , AbbreviationSimple
-                 , ABCProblem
-                 , ABCWords
-                 , Abelian
-                 , Abundant
-                 , Accumulator
-                 , Ackermann
-                 , ActiveObject
-                 , AdditionChains
-                 , AdditionChainsExponentiation
-                 , AdditivePrimes
-                 , ASKPrimes
-                 , AlgebraicData
-                 , AlignColumns
-                 , AliquotSeq
-                 , AlmkvistGiullera
-                 , AlmostPrimes
-                 , AmicablePairs
-                 , Anagrams
-                 , DerangedAnagrams
-                 , AngleBetweenTwoBear
-                 , AnglesGeomoetric
-                 , AnimatePendulum
-                 , AntiPrimes
-                 , AVLTree
-                 , ArchimedeanSpiral
-                 , ArithmeticEvaluation
-                 , AsciiDiagram
+                --  , ThroundPrisoners
+                --  , FifthPuzzleGame
+                --  , TwoZeroFourEightGame
+                --  , TwentityGame
+                --  , TwentityFour
+                --  , TwentitySolveGame
+                --  , FourRingsSquaresPuzzle
+                --  , NineBillonNamesGod
+                --  , NineNineBottleOfBeer
+                --  , ASearchAlgorithm
+                --  , Abbreviation
+                --  , AbbreviationEasy
+                --  , AbbreviationSimple
+                --  , ABCProblem
+                --  , ABCWords
+                --  , Abelian
+                --  , Abundant
+                --  , Accumulator
+                --  , Ackermann
+                --  , ActiveObject
+                --  , AdditionChains
+                --  , AdditionChainsExponentiation
+                --  , AdditivePrimes
+                --  , ASKPrimes
+                --  , AlgebraicData
+                --  , AlignColumns
+                --  , AliquotSeq
+                --  , AlmkvistGiullera
+                --  , AlmostPrimes
+                --  , AmicablePairs
+                --  , Anagrams
+                --  , DerangedAnagrams
+                --  , AngleBetweenTwoBear
+                --  , AnglesGeomoetric
+                --  , AnimatePendulum
+                --  , AntiPrimes
+                --  , AVLTree
+                --  , ArchimedeanSpiral
+                --  , ArithmeticEvaluation
+                --  , AsciiDiagram
+                 , AtomicUpdates
                  

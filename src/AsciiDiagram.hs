@@ -1,4 +1,4 @@
-{-# OPTIONS_GHC -Wno-incomplete-patterns #-}
+{-# OPTIONS_GHC -Wno-unrecognised-pragmas #-}
 module AsciiDiagram where
 import Text.ParserCombinators.ReadP
     ( ReadP, char, many, many1, munch1, readP_to_S, string )
@@ -12,7 +12,7 @@ instance Show a => Show (Field a) where
         Nothing -> n ++ "\t" ++ show s
         Just x  -> n ++ "\t" ++ show s ++ "\t" ++ show x
 
-newtype Data a = Data { fields :: [Field a]}
+newtype Data a = Data { fields :: [Field a]} --newtype if the type has exactly one constructor with exactly one field inside i
 
 instance Show a => Show (Data a) where
     show (Data fs) = "NAME\tSIZE\tVALUE\n" ++ unlines (show <$> fs)
