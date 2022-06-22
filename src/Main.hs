@@ -40,6 +40,8 @@ import ArchimedeanSpiral
 import ArithmeticEvaluation
 import AsciiDiagram
 import AtomicUpdates
+import AverageLoopLength
+import AverageMedian
 --main = FifthPuzzleGame.runMain
 --main = TwoZeroFourEightGame.runMain
 --main = TwentityGame.runMain
@@ -73,4 +75,6 @@ import AtomicUpdates
 --main = ArchimedeanSpiral.runMain
 --main = ArithmeticEvaluation.runMain
 --main = AsciiDiagram.runMain
-main = AtomicUpdates.runMain
+--main = AtomicUpdates.runMain
+--main = AverageLoopLength.runMain
+main = AverageMedian.runMain
