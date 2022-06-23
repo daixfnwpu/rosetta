@@ -42,6 +42,8 @@ import AsciiDiagram
 import AtomicUpdates
 import AverageLoopLength
 import AverageMedian
+import AveragesMode
+import PythagoreanMean
 --main = FifthPuzzleGame.runMain
 --main = TwoZeroFourEightGame.runMain
 --main = TwentityGame.runMain
@@ -77,4 +79,6 @@ import AverageMedian
 --main = AsciiDiagram.runMain
 --main = AtomicUpdates.runMain
 --main = AverageLoopLength.runMain
-main = AverageMedian.runMain
+--main = AverageMedian.runMain
+--main = AveragesMode.runMain
+main = PythagoreanMean.runMain

@@ -84,4 +84,6 @@ Executable rosetta
                   , AtomicUpdates
                   , AverageLoopLength
                   , AverageMedian
+                  , AveragesMode
+                  , PythagoreanMean
                  
