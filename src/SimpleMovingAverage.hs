@@ -25,22 +25,17 @@ mkSMA period = avgr <$> newIORef []
     where avgr nsref x = readIORef nsref >>= (\ns ->
                     let xs = take period (x:ns)
                     in writeIORef nsref xs $> mean xs)
-runMain1 :: IO ()
-runMain1 = do
-    sma3 <- mkSMA 3
-    v <- sma3 100
-    v <- sma3 200
-    v <- sma3 300
-    v <- sma3 400
-    v <- sma3 500
-    v <- sma3 600
-    v <- sma3 700
-    print v
 runSMA :: IO [String]
 runSMA = mkSMA 3 >>= (\sma3 -> mkSMA 5 >>= (\sma5-> mapM (\n -> str n <$> sma3 n <*> sma5 n ) series))
    where str n mm3 mm5 = concat ["Next number = ", show n,", SMA_3=",show mm3 ,",SMA_5 = ",show mm5]
 
 runMain :: IO ()
-runMain = do
-     re <- runSMA
-     print re
+--runMain = runSMA >>= print
+runMain = printSMA 3 5
+
+sMA :: Fractional a => Int -> [a] -> [(a, a)]
+sMA p = map (head *** head) .tail .
+        scanl (\(y,_) -> (id &&& return . av) . (: if length y==p then init y else y)) ([],[])
+    where av = liftM2 (/) sum (fromIntegral .length)
+printSMA :: Int -> Int -> IO ()
+printSMA n p = mapM_ (\(n,a) -> putStrLn $ "Next number: " ++ show n ++ " Average: " ++ show a) .take n . sMA p $ [1..5] ++ [5.4..1] ++ [3..]

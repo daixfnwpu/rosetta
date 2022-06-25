@@ -87,4 +87,5 @@ Executable rosetta
                   , AveragesMode
                   , PythagoreanMean
                   , SimpleMovingAverage
+                  , BClass.BaconCipher
                  
