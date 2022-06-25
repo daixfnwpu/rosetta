@@ -44,6 +44,7 @@ import AverageLoopLength
 import AverageMedian
 import AveragesMode
 import PythagoreanMean
+import SimpleMovingAverage
 --main = FifthPuzzleGame.runMain
 --main = TwoZeroFourEightGame.runMain
 --main = TwentityGame.runMain
@@ -81,4 +82,5 @@ import PythagoreanMean
 --main = AverageLoopLength.runMain
 --main = AverageMedian.runMain
 --main = AveragesMode.runMain
-main = PythagoreanMean.runMain
+--main = PythagoreanMean.runMain
+main = SimpleMovingAverage.runMain

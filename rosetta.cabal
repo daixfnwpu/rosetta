@@ -86,4 +86,5 @@ Executable rosetta
                   , AverageMedian
                   , AveragesMode
                   , PythagoreanMean
+                  , SimpleMovingAverage
                  
