@@ -45,6 +45,7 @@ import AverageMedian
 import AveragesMode
 import PythagoreanMean
 import SimpleMovingAverage
+import BClass.BaconCipher
 --main = FifthPuzzleGame.runMain
 --main = TwoZeroFourEightGame.runMain
 --main = TwentityGame.runMain
@@ -83,4 +84,5 @@ import SimpleMovingAverage
 --main = AverageMedian.runMain
 --main = AveragesMode.runMain
 --main = PythagoreanMean.runMain
-main = SimpleMovingAverage.runMain
+--main = SimpleMovingAverage.runMain
+main = BClass.BaconCipher.runMain
