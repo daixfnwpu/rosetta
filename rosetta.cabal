@@ -32,6 +32,7 @@ Executable rosetta
                  , gloss
                  , parsec
                  , split
+                 , vector
                --  , diagrams==1.4.0.1
    Hs-source-dirs: src
    Ghc-options:    -O2 -funbox-strict-fields -optc-O2
@@ -89,4 +90,5 @@ Executable rosetta
                   , PythagoreanMean
                   , SimpleMovingAverage
                   , BClass.BaconCipher
+                  , BClass.BalanceBrackets
                  
