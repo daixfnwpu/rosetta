@@ -1,51 +1,52 @@
 module Main where
 
-import ThroundDoors (runMain)
-import qualified  ThroundPrisoners (runMain) 
-import FifthPuzzleGame
-import TwoZeroFourEightGame
-import TwentityGame
-import TwentityFour
-import TwentitySolveGame
-import FourRingsSquaresPuzzle
-import NineBillonNamesGod
-import NineNineBottleOfBeer
-import ASearchAlgorithm
-import Abbreviation
-import AbbreviationEasy
-import AbbreviationSimple
-import ABCProblem
-import ABCWords
-import Abelian
-import Abundant
-import Accumulator
-import Ackermann
-import ActiveObject
-import AdditionChains
-import AdditivePrimes
-import ASKPrimes;
-import AlignColumns
-import AliquotSeq
-import AlmkvistGiullera
-import AlmostPrimes
-import AmicablePairs
-import Anagrams
-import DerangedAnagrams
-import AngleBetweenTwoBear
-import AnglesGeomoetric
-import AnimatePendulum
-import AntiPrimes
-import AVLTree
-import ArchimedeanSpiral
-import ArithmeticEvaluation
-import AsciiDiagram
-import AtomicUpdates
-import AverageLoopLength
-import AverageMedian
-import AveragesMode
-import PythagoreanMean
-import SimpleMovingAverage
+import AClass.ThroundDoors (runMain)
+import qualified  AClass.ThroundPrisoners (runMain) 
+import AClass.FifthPuzzleGame
+import AClass.TwoZeroFourEightGame
+import AClass.TwentityGame
+import AClass.TwentityFour
+import AClass.TwentitySolveGame
+import AClass.FourRingsSquaresPuzzle
+import AClass.NineBillonNamesGod
+import AClass.NineNineBottleOfBeer
+import AClass.ASearchAlgorithm
+import AClass.Abbreviation
+import AClass.AbbreviationEasy
+import AClass.AbbreviationSimple
+import AClass.ABCProblem
+import AClass.ABCWords
+import AClass.Abelian
+import AClass.Abundant
+import AClass.Accumulator
+import AClass.Ackermann
+import AClass.ActiveObject
+import AClass.AdditionChains
+import AClass.AdditivePrimes
+import AClass.ASKPrimes;
+import AClass.AlignColumns
+import AClass.AliquotSeq
+import AClass.AlmkvistGiullera
+import AClass.AlmostPrimes
+import AClass.AmicablePairs
+import AClass.Anagrams
+import AClass.DerangedAnagrams
+import AClass.AngleBetweenTwoBear
+import AClass.AnglesGeomoetric
+import AClass.AnimatePendulum
+import AClass.AntiPrimes
+import AClass.AVLTree
+import AClass.ArchimedeanSpiral
+import AClass.ArithmeticEvaluation
+import AClass.AsciiDiagram
+import AClass.AtomicUpdates
+import AClass.AverageLoopLength
+import AClass.AverageMedian
+import AClass.AveragesMode
+import AClass.PythagoreanMean
+import AClass.SimpleMovingAverage
 import BClass.BaconCipher
+import BClass.BalanceBrackets
 --main = FifthPuzzleGame.runMain
 --main = TwoZeroFourEightGame.runMain
 --main = TwentityGame.runMain
@@ -85,4 +86,5 @@ import BClass.BaconCipher
 --main = AveragesMode.runMain
 --main = PythagoreanMean.runMain
 --main = SimpleMovingAverage.runMain
-main = BClass.BaconCipher.runMain
+--main = BClass.BaconCipher.runMain
+main = BClass.BalanceBrackets.runMain

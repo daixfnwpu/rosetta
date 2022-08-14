@@ -42,53 +42,53 @@ Executable rosetta
                  , MultiParamTypeClasses
                  , TypeOperators
                  , Rank2Types
-   other-modules:  ThroundDoors
-                  , ThroundPrisoners
-                  , FifthPuzzleGame
-                  , TwoZeroFourEightGame
-                  , TwentityGame
-                  , TwentityFour
-                  , TwentitySolveGame
-                  , FourRingsSquaresPuzzle
-                  , NineBillonNamesGod
-                  , NineNineBottleOfBeer
-                  , ASearchAlgorithm
-                  , Abbreviation
-                  , AbbreviationEasy
-                  , AbbreviationSimple
-                  , ABCProblem
-                  , ABCWords
-                  , Abelian
-                  , Abundant
-                  , Accumulator
-                  , Ackermann
-                  , ActiveObject
-                  , AdditionChains
-                  , AdditionChainsExponentiation
-                  , AdditivePrimes
-                  , ASKPrimes
-                  , AlgebraicData
-                  , AlignColumns
-                  , AliquotSeq
-                  , AlmkvistGiullera
-                  , AlmostPrimes
-                  , AmicablePairs
-                  , Anagrams
-                  , DerangedAnagrams
-                  , AngleBetweenTwoBear
-                  , AnglesGeomoetric
-                  , AnimatePendulum
-                  , AntiPrimes
-                  , AVLTree
-                  , ArchimedeanSpiral
-                  , ArithmeticEvaluation
-                  , AsciiDiagram
-                  , AtomicUpdates
-                  , AverageLoopLength
-                  , AverageMedian
-                  , AveragesMode
-                  , PythagoreanMean
-                  , SimpleMovingAverage
-                  , BClass.BaconCipher
-                  , BClass.BalanceBrackets
+   other-modules:  AClass.ThroundDoors
+                  ,AClass.ThroundPrisoners
+                  ,AClass.FifthPuzzleGame
+                  ,AClass.TwoZeroFourEightGame
+                  ,AClass.TwentityGame
+                  ,AClass.TwentityFour
+                  ,AClass.TwentitySolveGame
+                  ,AClass.FourRingsSquaresPuzzle
+                  ,AClass.NineBillonNamesGod
+                  ,AClass.NineNineBottleOfBeer
+                  ,AClass.ASearchAlgorithm
+                  ,AClass.Abbreviation
+                  ,AClass.AbbreviationEasy
+                  ,AClass.AbbreviationSimple
+                  ,AClass.ABCProblem
+                  ,AClass.ABCWords
+                  ,AClass.Abelian
+                  ,AClass.Abundant
+                  ,AClass.Accumulator
+                  ,AClass.Ackermann
+                  ,AClass.ActiveObject
+                  ,AClass.AdditionChains
+                  ,AClass.AdditionChainsExponentiation
+                  ,AClass.AdditivePrimes
+                  ,AClass.ASKPrimes
+                  ,AClass.AlgebraicData
+                  ,AClass.AlignColumns
+                  ,AClass.AliquotSeq
+                  ,AClass.AlmkvistGiullera
+                  ,AClass.AlmostPrimes
+                  ,AClass.AmicablePairs
+                  ,AClass.Anagrams
+                  ,AClass.DerangedAnagrams
+                  ,AClass.AngleBetweenTwoBear
+                  ,AClass.AnglesGeomoetric
+                  ,AClass.AnimatePendulum
+                  ,AClass.AntiPrimes
+                  ,AClass.AVLTree
+                  ,AClass.ArchimedeanSpiral
+                  ,AClass.ArithmeticEvaluation
+                  ,AClass.AsciiDiagram
+                  ,AClass.AtomicUpdates
+                  ,AClass.AverageLoopLength
+                  ,AClass.AverageMedian
+                  ,AClass.AveragesMode
+                  ,AClass.PythagoreanMean
+                  ,AClass.SimpleMovingAverage
+                  ,BClass.BaconCipher
+                  ,BClass.BalanceBrackets
                  

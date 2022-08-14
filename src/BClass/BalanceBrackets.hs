@@ -1,9 +1,10 @@
 {-# OPTIONS_GHC -Wno-incomplete-patterns #-}
+{-# LANGUAGE BlockArguments #-}
 module BClass.BalanceBrackets where
-import Control.Monad ( replicateM, zipWithM ) 
+import Control.Monad ( replicateM, zipWithM, zipWithM_ ) 
 import Text.Printf (printf)
-import System.Random ( Random(randomR), RandomGen, newStdGen ) 
-import Control.Monad.ST ( runST )
+import System.Random 
+import Control.Monad.ST 
 import Data.List (mapAccumL)
 import qualified Data.Vector as V
 import qualified Data.Vector.Generic.Mutable as M
@@ -39,12 +40,13 @@ pairs l u r = snd $ mapAccumL step  r [ l.. pred u]
 
 shuffle :: (RandomGen g) => String -> g -> String
 shuffle  xs r = 
-    V.toList . runST $  do v <- V.unsafeThaw $ V.fromList xs
-                           mapM_ (uncurry $ M.swap v) $ pairs 0 (M.length v -1) r
-                           V.unsafeFreeze v
+    V.toList $ runST 
+    do  v <- V.unsafeThaw  $ V.fromList xs
+        mapM_ (uncurry $ M.swap v) $ pairs 0 (M.length v -1) r
+        V.unsafeFreeze v
 
--- runMain :: IO ()
--- runMain = do 
---     let bs = cycle "[]"
---     rs <- replicateM 10 newStdGen
---     zipWithM (\n r -> check $ shuffle (take n bs) r) [0,2 ..] rs
+runMain :: IO ()
+runMain = do 
+    let bs = cycle "[]"
+    rs <- replicateM 10 newStdGen
+    zipWithM_ (\n r -> check $ shuffle (take n bs) r) [0,2 ..] rs
