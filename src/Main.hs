@@ -47,6 +47,8 @@ import AClass.PythagoreanMean
 import AClass.SimpleMovingAverage
 import BClass.BaconCipher
 import BClass.BalanceBrackets
+import BClass.BalancedTenary
+
 --main = FifthPuzzleGame.runMain
 --main = TwoZeroFourEightGame.runMain
 --main = TwentityGame.runMain
@@ -87,4 +89,5 @@ import BClass.BalanceBrackets
 --main = PythagoreanMean.runMain
 --main = SimpleMovingAverage.runMain
 --main = BClass.BaconCipher.runMain
-main = BClass.BalanceBrackets.runMain
+--main = BClass.BalanceBrackets.runMain
+main = BClass.BalancedTenary.runMain

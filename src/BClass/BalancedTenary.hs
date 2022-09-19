@@ -2,7 +2,7 @@
 {-# HLINT ignore "Use newtype instead of data" #-}
 {-# LANGUAGE LambdaCase #-}
 {-# OPTIONS_GHC -Wno-incomplete-patterns #-}
-module BClass.BlanceTernary
+module BClass.BalancedTenary
 where
 
 data BalancedTenary = Bt [Int]
@@ -28,7 +28,7 @@ instance Show BalancedTenary where
     show = reverse .map (\case  -1 -> '-'; 0 -> '0'; 1 -> '+') . btList
 
 strBt = Bt . zeroTrim . reverse . map (\case '-' -> -1; '0' -> 0; '+' ->1) 
-
+btInt = foldr (\a z -> a + z *3) 0 . btList
 intBt :: Integral a => a -> BalancedTenary
 intBt = fromIntegral . toInteger
 
@@ -39,3 +39,15 @@ instance Num BalancedTenary where
     (*) x y =btNormalize $ mul_ (btList x) (btList y) where
         mul_ _ [] = []
         mul_ as b = foldr (\a z -> listAdd (map (a*) b) (0:z)) [] as
+    signum (Bt a) = if a== [0] then 0 else Bt [last a]
+    abs x = if signum x == Bt [-1] then negate x else x
+    fromInteger = btNormalize . f where
+        f 0 = []
+        f x = fromInteger (x `rem` 3) : f (x `quot` 3)
+runMain = let
+            (a,b,c) = (strBt "+-0++0+",intBt (-436),strBt "+-++-")
+            r = a * (b -c)
+        in do 
+            print $ map btInt [a,b,c]
+            print  r
+            print $ btInt r

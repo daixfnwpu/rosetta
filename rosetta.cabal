@@ -91,5 +91,5 @@ Executable rosetta
                   ,AClass.SimpleMovingAverage
                   ,BClass.BaconCipher
                   ,BClass.BalanceBrackets
-                  ,BClass.BlanceTernary
+                  ,BClass.BalancedTenary
                  
