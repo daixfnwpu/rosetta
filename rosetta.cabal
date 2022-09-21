@@ -33,7 +33,9 @@ Executable rosetta
                  , parsec
                  , split
                  , vector
-                 , diagrams==1.4.0.1
+                 , diagrams
+                 , diagrams-lib
+                 , diagrams-rasterific
    Hs-source-dirs: src
    Ghc-options:    -O2 -funbox-strict-fields -optc-O2
    Extensions:     BangPatterns

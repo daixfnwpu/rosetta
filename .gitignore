@@ -40,3 +40,12 @@
 .stack-work/install/x86_64-linux-tinfo6/8a1b5e32f7197c094b2dc3e8a0e0080320d0666674340d8b2481ce6fee069a77/8.10.7/share/x86_64-linux-ghc-8.10.7/rosetta-1.1.2/README.md
 stack.yaml.lock
 stack.yaml.lock
+data/fern.png
+dist-newstyle/cache/compiler
+dist-newstyle/cache/config
+dist-newstyle/cache/elaborated-plan
+dist-newstyle/cache/improved-plan
+dist-newstyle/cache/plan.json
+dist-newstyle/cache/solver-plan
+dist-newstyle/cache/source-hashes
+dist-newstyle/sdist/rosetta-1.1.2.tar.gz
