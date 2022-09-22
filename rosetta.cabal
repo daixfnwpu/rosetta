@@ -95,4 +95,5 @@ Executable rosetta
                   ,BClass.BalanceBrackets
                   ,BClass.BalancedTenary
                   ,BClass.BarnsleyFern
+                  ,BClass.Base16Number
                  

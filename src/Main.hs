@@ -49,6 +49,7 @@ import BClass.BaconCipher
 import BClass.BalanceBrackets
 import BClass.BalancedTenary
 import BClass.BarnsleyFern
+import BClass.Base16Number
 --main = FifthPuzzleGame.runMain
 --main = TwoZeroFourEightGame.runMain
 --main = TwentityGame.runMain
@@ -90,4 +91,5 @@ import BClass.BarnsleyFern
 --main = SimpleMovingAverage.runMain
 --main = BClass.BaconCipher.runMain
 --main = BClass.BalanceBrackets.runMain
-main = BClass.BarnsleyFern.runMain
+--main = BClass.BarnsleyFern.runMain
+main = BClass.Base16Number.runMain
