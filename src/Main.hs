@@ -50,6 +50,7 @@ import BClass.BalanceBrackets
 import BClass.BalancedTenary
 import BClass.BarnsleyFern
 import BClass.Base16Number
+import BClass.BellNumber
 --main = FifthPuzzleGame.runMain
 --main = TwoZeroFourEightGame.runMain
 --main = TwentityGame.runMain
@@ -92,4 +93,5 @@ import BClass.Base16Number
 --main = BClass.BaconCipher.runMain
 --main = BClass.BalanceBrackets.runMain
 --main = BClass.BarnsleyFern.runMain
-main = BClass.Base16Number.runMain
+--main = BClass.Base16Number.runMain
+main = BClass.BellNumber.runMain
