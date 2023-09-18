@@ -36,6 +36,7 @@ Executable rosetta
                  , diagrams
                  , diagrams-lib
                  , diagrams-rasterific
+                 , bitmap
    Hs-source-dirs: src
    Ghc-options:    -O2 -funbox-strict-fields -optc-O2
    Extensions:     BangPatterns
@@ -97,4 +98,11 @@ Executable rosetta
                   ,BClass.BarnsleyFern
                   ,BClass.Base16Number
                   ,BClass.BellNumber
+                  ,BClass.BenfordLow
+                  ,BClass.Bernoullis
+                  ,BClass.BestShuffle
+                  ,BClass.BinGivenLimits
+                  ,BClass.BinSearch
+                  ,BClass.BioInformatics
+                  ,BClass.BitMap
                  

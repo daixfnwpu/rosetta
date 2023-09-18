@@ -51,6 +51,13 @@ import BClass.BalancedTenary
 import BClass.BarnsleyFern
 import BClass.Base16Number
 import BClass.BellNumber
+import BClass.BenfordLow
+import BClass.Bernoullis
+import BClass.BestShuffle
+import BClass.BinGivenLimits
+import BClass.BinSearch
+import BClass.BioInformatics
+
 --main = FifthPuzzleGame.runMain
 --main = TwoZeroFourEightGame.runMain
 --main = TwentityGame.runMain
@@ -94,4 +101,10 @@ import BClass.BellNumber
 --main = BClass.BalanceBrackets.runMain
 --main = BClass.BarnsleyFern.runMain
 --main = BClass.Base16Number.runMain
-main = BClass.BellNumber.runMain
+--main = BClass.BellNumber.runMain
+--main = BClass.BenfordLow.runMain
+--main = BClass.Bernoullis.runMain
+--main = BClass.BestShuffle.runMain
+--main = BClass.BinGivenLimits.runMain
+--main = BClass.BinSearch.runMain
+main = BClass.BioInformatics.runMain
